@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #534c64;
+  --linear-color: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  --secondary: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
+  --linear: #ff42a5;
+}
+body {
+  font-family: 'Work Sans', sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.common-paragraph {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.common-bullet {
+  color: #534c64;
+  font-size: 20px;
+  font-weight: 500;
+}
+.common-title {
+  text-align: right;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header-container ul {
+  display: flex;
+  gap: 32px;
+}
+.header-container ul li {
+  list-style: none;
+}
+
+/* Header section style starts here */
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-logo h2 {
+  color: #0b0223;
+  font-size: 45px;
+  font-weight: 700;
+}
+.title-color {
+  background: var(--linear, --secondary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header-logo img {
+  width: 86px;
+  height: 40px;
+}
+.header-icon {
+  display: flex;
+}
+.header-hero {
+  display: flex;
+  align-items: center;
+}
+.follow-us {
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+}
+/* Header section style ends here */
+.goat-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 68px;
+  justify-content: space-between;
+  background: linear-gradient(
+    235deg,
+    rgba(140, 87, 238, 0.03) 3.9%,
+    rgba(241, 68, 174, 0.03) 100.56%
+  );
+}
+.goat-section > div {
+  height: 700px;
+}
+.goat-section-item {
+  display: flex;
+  gap: 12px;
+}
+.goat-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../images/Group\ 14.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+.section-title {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.goat-section-container > h3 {
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn {
+  padding: 21px 40px;
+  border-radius: 48px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  border: 0px;
+  margin-top: 41px;
+  text-transform: uppercase;
+}
+.btn-sign-up {
+  border-radius: 48px;
+  margin-right: 24px;
+  background: var(
+    --Linear,
+    linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%)
+  );
+}
+.btn-rouge {
+  background: #4ec5f7;
+}
+
+/*banner section ends hrer */
+
+/* Gamer section  style starts here*/
+.gamer-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 13.13%,
+    rgba(255, 66, 165, 0.03) 87.94%
+  );
+  margin-bottom: 120px;
+}
+.gamer-container {
+  text-align: right;
+}
+.btn-know-more {
+  border-radius: 48px;
+  background: var(
+    --Linear,
+    linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%)
+  );
+}
+.gamer-greating {
+  color: #534c64;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 45px;
+  margin-top: 24px;
+}
+.gamer-greating span {
+  color: #534c64;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 45px;
+}
+/* Gamer section  style ends here*/
+
+/* Funny section starts here */
+.funny-videos-container {
+  text-align: center;
+}
+.funny-videos-section {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+/* Funny section ends here */
+/* play section style starts here */
+.play-section {
+  margin-top: 120px;
+  display: flex;
+  gap: 265px;
+  align-items: center;
+}
+
+.play-container {
+  display: block;
+  text-align: right;
+}
+.play-img {
+  position: relative;
+  justify-content: end;
+}
+.play-img-barby {
+  position: absolute;
+  top: 370px;
+  left: -150px;
+}
+/* play section style ends here */
+/* Play online section style starts here */
+.play-online-section {
+  display: flex;
+  margin-top: 195px;
+}
+.play-online-img-container {
+  position: relative;
+}
+.play-online-img {
+  position: absolute;
+  left: 530px;
+  top: 407px;
+}
+.play-online-details {
+  margin: 200px 0px 0px 249px;
+}
+/* Play online section style edns here */
+/* children section style starts here  */
+.children-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 243px;
+  background: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
+}
+.children-title {
+  width: 426px;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.children-description {
+  width: 680px;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 30px;
+}
+.children-img {
+  width: 665px;
+  height: 516px;
+}
+/* children section style ends here  */
+
+/* meadia query starts here */
+@media screen and (max-width: 1112px) {
+  .body {
+    width: 1112px;
+    margin: 0 auto;
+  }
+  .header-container,
+  .header-hero,
+  .header-container ul,
+  .play-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .goat-section {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .gamer-section {
+    flex-direction: column;
+  }
+  .gamer-container,
+  .common-title,
+  .play-container {
+    text-align: center;
+  }
+  .gamer-description {
+    width: 520px;
+  }
+  .funny-videos-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .funny-videos-section img {
+    width: 603px;
+  }
+  .play-online-section {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .play-online-details {
+    margin: 0 200px 80px 200px;
+    text-align: center;
+  }
+}
+
+/* meadia query ends here */
