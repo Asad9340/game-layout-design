@@ -11,7 +11,17 @@
 }
 body {
   font-family: 'Work Sans', sans-serif;
+}
+header {
   max-width: 1440px;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+section {
+  max-width: 1920px;
   margin: 0 auto;
 }
 .common-paragraph {
@@ -91,15 +101,19 @@ header {
 }
 /* Header section style ends here */
 .goat-section {
+  background-image: linear-gradient(
+      235deg,
+      rgba(140, 87, 238, 0.03) 3.9%,
+      rgba(241, 68, 174, 0.03) 100.56%
+    ),
+    url(../images/Group\ 14.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 68px;
   justify-content: space-between;
-  background: linear-gradient(
-    235deg,
-    rgba(140, 87, 238, 0.03) 3.9%,
-    rgba(241, 68, 174, 0.03) 100.56%
-  );
+  background: ;
 }
 .goat-section > div {
   height: 700px;
@@ -112,10 +126,10 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(../images/Group\ 14.png);
+  /* background-image: url(../images/Group\ 14.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-repeat: repeat-y;
+  background-repeat: repeat-y; */
 }
 .section-title {
   color: #0b0223;
@@ -158,15 +172,17 @@ header {
 /*banner section ends hrer */
 
 /* Gamer section  style starts here*/
-.gamer-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.gammer-section-background {
   background: linear-gradient(
     90deg,
     rgba(255, 66, 165, 0.03) 13.13%,
     rgba(255, 66, 165, 0.03) 87.94%
   );
+}
+.gamer-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 120px;
 }
 .gamer-container {
@@ -244,12 +260,12 @@ header {
 }
 /* Play online section style edns here */
 /* children section style starts here  */
-.children-section {
+.children-section-container {
+  background: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-top: 243px;
-  background: linear-gradient(90deg, #ff42a5 13.13%, #ff42a5 87.94%);
+  align-items: center;
 }
 .children-title {
   width: 426px;
@@ -266,10 +282,50 @@ header {
   line-height: 30px;
 }
 .children-img {
-  width: 665px;
-  height: 516px;
+  height: 821px;
+}
+.career-point {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.career-bullet {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+}
+.btn-see-all-post {
+  background-color: #fff;
+  color: #ff42a5;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 /* children section style ends here  */
+.box {
+  width: 248px;
+  height: 80px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 15px;
+  padding-left: 10px;
+}
+.box:hover {
+  border-radius: 50px;
+  border: 1.5px solid var(--Linear, #ff42a5);
+}
+.box-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 40px;
+  margin-top: 40px;
+}
+.game-catagory {
+  margin: 120px 0px;
+}
 
 /* meadia query starts here */
 @media screen and (max-width: 1112px) {
@@ -280,7 +336,8 @@ header {
   .header-container,
   .header-hero,
   .header-container ul,
-  .play-section {
+  .play-section,
+  .children-section-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -316,6 +373,13 @@ header {
   .play-online-details {
     margin: 0 200px 80px 200px;
     text-align: center;
+  }
+  .children-section-container {
+    padding: 150px 0px;
+  }
+  .box-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
 }
 
